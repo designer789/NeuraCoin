@@ -87,33 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth Scrolling Navigation
-    const navLinks = document.querySelectorAll('.nav-links a');
-    const headerHeight = document.querySelector('header').offsetHeight;
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Get the target section
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                // Calculate position with offset for fixed header
-                const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-                
-                // Smooth scroll to target
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
     // Highlight active menu item on scroll
     const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const headerHeight = document.querySelector('header').offsetHeight;
     
     function highlightActiveSection() {
         const scrollPosition = window.scrollY;
