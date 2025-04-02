@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraCoin</title>
+    <link rel="icon" type="image/png" href="uploads/images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Face Setup -->
+    <style>
+        @font-face {
+            font-family: 'Clash Display';
+            src: url('uploads/fonts/ClashDisplay-Extralight.woff') format('woff');
+            font-weight: 200;
+        }
+        @font-face {
+            font-family: 'Clash Display';
+            src: url('uploads/fonts/ClashDisplay-Light.woff') format('woff');
+            font-weight: 300;
+        }
+        @font-face {
+            font-family: 'Clash Display';
+            src: url('uploads/fonts/ClashDisplay-Regular.woff') format('woff');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'Clash Display';
+            src: url('uploads/fonts/ClashDisplay-Medium.woff') format('woff');
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'Clash Display';
+            src: url('uploads/fonts/ClashDisplay-Semibold.woff') format('woff');
+            font-weight: 600;
+        }
+        @font-face {
+            font-family: 'Clash Display';
+            src: url('uploads/fonts/ClashDisplay-Bold.woff') format('woff');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Clash Display Variable';
+            src: url('uploads/fonts/ClashDisplay-Variable.woff') format('woff');
+            font-weight: 200 700;
+        }
+    </style>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="uploads/images/hd.png" alt="NeuraCoin Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#intro">About</a>
+                <a href="#features">Features</a>
+                <a href="#advantages">Advantages</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="social-links">
+                <a href="https://x.com/NeuraCoin_COIN" class="social-icon" title="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="https://t.me/NeuraCoin_Portal" class="social-icon" title="Join our Telegram" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-nav">
+            <div class="mobile-nav-content">
+                <div class="mobile-nav-links">
+                    <a href="#hero">Home</a>
+                    <a href="#intro">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#advantages">Advantages</a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="mobile-social-links">
+                    <a href="https://x.com/NeuraCoin_COIN" class="social-icon" title="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/NeuraCoin_Portal" class="social-icon" title="Join our Telegram" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>NeuraCoin - Your AI Brain <span class="emoji">🧠</span></h1>
+                <div class="rotating-text-container">
+                    <h2 class="rotating-text"></h2>
+                </div>
+                <p>The first AI network where YOU own the intelligence and earn the rewards! 🧠⛓️</p>
+                
+                <div class="hero-description">
+                    <!-- Removed the long description text -->
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="cta-button">Join Whitelist</button>
+                    <button class="cta-button secondary">Documentation</button>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="uploads/images/10568462.png" alt="NeuraCoin AI Network Visualization">
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <section class="intro" id="intro">
+        <div class="intro-content">
+            <div class="badge">Introduction</div>
+            <div class="intro-text">
+                <p>Welcome to NeuraCoin, the revolutionary DeFi x AI platform that's disrupting the $1.5 trillion AI industry. While centralized AI giants hoard profits and data, NeuraCoin creates the first truly decentralized AI ecosystem where community members earn from every computation.</p>
+                <p>NeuraCoin transforms the traditional AI model into a community-owned network where early adopters can stake, earn, and govern the future of decentralized intelligence.</p>
+            </div>
+        </div>
+        <div class="retro-grid"></div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-content">
+            <div class="section-header">
+                <h2>Core Features</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⛏️</div>
+                    <h3>Neural Node Network</h3>
+                    <h4>Mine AI Like Bitcoin</h4>
+                    <p>Convert your idle GPUs into money printers! Our revolutionary Neural Mining protocol lets you earn NRC tokens 24/7 by contributing computing power to the network. With dynamic rewards that increase with network usage, early node operators stand to earn massive yields as adoption grows. Set up once, earn forever - passive income on autopilot! ⛏️💸</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI Model Marketplace</h3>
+                    <h4>The App Store of AI</h4>
+                    <p>Access premium AI models without the Big Tech tax! Our permissionless marketplace connects AI creators directly with users, cutting out the middlemen and slashing costs by up to 90%. For developers: mint your AI as NFTs and earn royalties forever. The next billion-dollar AI model could be yours! 🧠💎</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛢️</div>
+                    <h3>Knowledge Mining</h3>
+                    <h4>Data is the New Oil</h4>
+                    <p>Turn your data into digital gold! Our groundbreaking Knowledge Mining protocol rewards users for contributing training data while maintaining 100% privacy. Unlike centralized platforms that steal your data, we let you monetize it directly. Early miners receive bonus multipliers - the earlier you join, the bigger your rewards! 🛢️💰</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>NeuraDAO</h3>
+                    <h4>Own the Network</h4>
+                    <p>This isn't just a platform - it's your platform. NRC holders govern all aspects of the ecosystem through our DAO, controlling the treasury and shaping the future of AI. Governance stakers receive enhanced APY and exclusive access to premium features. Don't just use AI - own it! 🏛️👑</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+        <div class="advantages-content">
+            <div class="section-header">
+                <h2>Choose AI Brain, Choose NeuraCoin</h2>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-header">
+                        <h3>First-Mover Advantage</h3>
+                    </div>
+                    <p>NeuraCoin is the pioneer in combining DeFi incentives with decentralized AI infrastructure. We're creating an entirely new market category at the intersection of two explosive trends.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-header">
+                        <h3>Triple Flywheel Tokenomics</h3>
+                    </div>
+                    <p>Our unique token design creates three self-reinforcing growth loops:</p>
+                    <ul class="flywheel-list">
+                        <li><span>More users</span> → More computation demand → Higher rewards for node operators → More nodes → Better performance → <span>More users</span></li>
+                        <li><span>More developers</span> → More AI models → More platform utility → Higher NRC value → More developer incentives → <span>More developers</span></li>
+                        <li><span>More data contributors</span> → Better AI models → More users → More fees → Higher rewards → <span>More data contributors</span></li>
+                    </ul>
+                    <p>This creates an unstoppable growth engine that traditional AI companies can't match. Tokenomics designed for exponential growth! 📈🔄</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-header">
+                        <h3>Massive Total Addressable Market</h3>
+                    </div>
+                    <p>The AI market is projected to reach 500+ billion. By capturing just 1% of this market, NeuraCoin's network value could reach $15 billion - a 150x from our initial valuation! We're not chasing a small niche - we're disrupting the entire AI industry. 🌐💰</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-header">
+                        <h3>Elite Team & Backers</h3>
+                    </div>
+                    <p>Our founding team combines crypto OGs and AI pioneers from Google, OpenAI, and Ethereum. This isn't a random dev team - this is the A-team of AI x Crypto! 🦄👨‍💻</p>
+                </div>
+            </div>
+        </div>
+        <div class="advantages-bg"></div>
+    </section>
+
+    <section class="tokenomics" id="tokenomics">
+        <div class="tokenomics-grid-bg"></div>
+        <div class="tokenomics-content">
+            <div class="section-header">
+                <h2>Tokenomics</h2>
+            </div>
+            
+            <div class="token-overview">
+                <p class="token-description">$NRC is the ultimate utility token with deflationary mechanics and genuine scarcity.</p>
+                <div class="token-supply">
+                    <span class="supply-label">Total Supply:</span>
+                    <span class="supply-value">1,000,000,000 NRC</span>
+                </div>
+            </div>
+            
+            <div class="tokenomics-grid">
+                <div class="token-utility">
+                    <h3>Token Utility</h3>
+                    <p class="subtitle">The Lifeblood of the Ecosystem:</p>
+                    <ul class="utility-list">
+                        <li><span class="utility-icon">💰</span> Pay for AI computation (required for all network usage)</li>
+                        <li><span class="utility-icon">🔑</span> Access premium AI models (exclusive to token holders)</li>
+                        <li><span class="utility-icon">📈</span> Stake for massive APY (up to 120% in early phases)</li>
+                        <li><span class="utility-icon">🏛️</span> Govern the DAO (voting weight increases with lock time)</li>
+                        <li><span class="utility-icon">💸</span> Receive fee discounts (up to 90% for diamond hands)</li>
+                        <li><span class="utility-icon">⚡</span> Priority computation access (skip the queue during high demand)</li>
+                    </ul>
+                </div>
+                
+                <div class="token-allocation">
+                    <h3>Token Allocation</h3>
+                    <p class="subtitle">Fair Launch Principles:</p>
+                    <div class="allocation-content">
+                        <div class="chart-container">
+                            <div class="pie-chart">
+                                <div class="slice slice-1" data-value="60%"></div>
+                                <div class="slice slice-2" data-value="15%"></div>
+                                <div class="slice slice-3" data-value="10%"></div>
+                                <div class="slice slice-4" data-value="10%"></div>
+                                <div class="slice slice-5" data-value="5%"></div>
+                            </div>
+                        </div>
+                        <ul class="allocation-list">
+                            <li><span class="color-indicator color-1"></span><span class="allocation-value">60%</span> Public Sale & Liquidity</li>
+                            <li><span class="color-indicator color-2"></span><span class="allocation-value">15%</span> Ecosystem Development</li>
+                            <li><span class="color-indicator color-3"></span><span class="allocation-value">10%</span> Team and Advisors</li>
+                            <li><span class="color-indicator color-4"></span><span class="allocation-value">10%</span> Community Rewards</li>
+                            <li><span class="color-indicator color-5"></span><span class="allocation-value">5%</span> Strategic Reserve</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tokenomics-bg"></div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+        <div class="roadmap-content">
+            <div class="section-header">
+                <h2>Roadmap to Dominance</h2>
+            </div>
+            
+            <div class="roadmap-container">
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">1</div>
+                        <h3>Genesis</h3>
+                    </div>
+                    <ul class="phase-items">
+                        <li>NeuraCoin whitepaper and technical prototype release</li>
+                        <li>Strategic seed round (invitation only)</li>
+                        <li>Public token sale with tiered bonuses for early supporters</li>
+                        <li>Core protocol development and testnet launch</li>
+                        <li>Strategic partnerships with GPU manufacturers and AI labs</li>
+                        <li>Community building and initial node operator onboarding</li>
+                    </ul>
+                </div>
+                
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">2</div>
+                        <h3>Ignition</h3>
+                    </div>
+                    <ul class="phase-items">
+                        <li>Mainnet beta launch with initial staking rewards</li>
+                        <li>Neural Node Network deployment with early miner bonuses</li>
+                        <li>Basic AI Model Marketplace with featured developers</li>
+                        <li>Initial NeuraDAO governance implementation</li>
+                        <li>Developer SDK and API release</li>
+                        <li>Major CEX listings and liquidity expansion</li>
+                    </ul>
+                </div>
+                
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">3</div>
+                        <h3>Acceleration</h3>
+                    </div>
+                    <ul class="phase-items">
+                        <li>Full mainnet launch with enhanced performance</li>
+                        <li>Complete AI Model Marketplace with permissionless listing</li>
+                        <li>Advanced DAO governance with proposal framework</li>
+                        <li>Cross-chain bridges to Ethereum, Solana, and other major L1s</li>
+                        <li>Industry-specific AI solution templates</li>
+                        <li>Major marketing campaigns and global expansion</li>
+                    </ul>
+                </div>
+                
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">4</div>
+                        <h3>Domination</h3>
+                    </div>
+                    <ul class="phase-items">
+                        <li>Enterprise adoption partnerships</li>
+                        <li>Mobile app and browser extension</li>
+                        <li>Specialized AI marketplaces for vertical industries</li>
+                        <li>Advanced privacy-preserving computation layer</li>
+                        <li>Fiat on-ramps and institutional services</li>
+                        <li>NeuraCoin Ventures to fund ecosystem projects</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="roadmap-line"></div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="faq-content">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can developers monetize their AI models on NeuraCoin?</h3>
+                        <div class="toggle-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Developers can tokenize their AI models as NFTs on our platform, establishing verifiable ownership and enabling flexible licensing models. They can set customized usage terms and pricing structures, receiving automatic royalties whenever their models are used. Our marketplace provides tools for model discovery, version management, and usage analytics to help developers maximize their reach and revenue. Additionally, promising projects can apply for grants from the ecosystem development fund to accelerate their development.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the expected returns for early node operators?</h3>
+                        <div class="toggle-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Early Neural Node operators can expect significantly higher rewards due to our bonus multiplier system. Based on our economic models, early adopters could see 80-120% APY during the first year, gradually normalizing as the network grows. The earlier you join, the more you earn!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does NeuraCoin compare to other AI tokens?</h3>
+                        <div class="toggle-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Unlike most AI tokens that are simply governance tokens for centralized services, NRC has genuine utility required for all network operations. We're building actual AI infrastructure, not just marketing hype. While others talk about AI, we're building the decentralized foundation that will power the future of artificial intelligence.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does NeuraCoin ensure data privacy and security?</h3>
+                        <div class="toggle-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>NeuraCoin implements multiple layers of privacy protection. First, our federated learning approach allows models to be trained across distributed data sources without centralizing sensitive information. Second, we employ differential privacy techniques to prevent individual data identification. Third, we utilize zero-knowledge proofs and secure multi-party computation for applications requiring computation across private datasets. Finally, our governance includes clear data usage policies and consent mechanisms that give users control over how their data is utilized.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>When will NRC be listed on exchanges?</h3>
+                        <div class="toggle-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have secured commitments from multiple Tier-1 exchanges for listings immediately following our token generation event in Q2-Q3 2026. Our tokenomics and liquidity strategy are designed to ensure strong market support from day one.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I get involved before the token sale?</h3>
+                        <div class="toggle-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Join our community now to get on the ground floor! Early community members can earn whitelist spots, airdrops, and special roles through our ambassador program. Developers can apply for our grant program to build on our testnet and receive early token allocations.</p>
+                        <div class="cta-buttons">
+                            <button class="cta-button secondary">Join Discord</button>
+                            <button class="cta-button secondary">Follow Twitter</button>
+                            <button class="cta-button secondary">Subscribe to Newsletter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="particles.js"></script>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="uploads/images/hd.png" alt="NeuraCoin Logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4>Navigation</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#intro">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#advantages">Advantages</a>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Resources</h4>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#">Whitepaper</a>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Community</h4>
+                    <a href="https://x.com/NeuraCoin_COIN" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://t.me/NeuraCoin_Portal" target="_blank" rel="noopener noreferrer">Telegram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2025 NeuraCoin. All rights reserved.
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html> 
